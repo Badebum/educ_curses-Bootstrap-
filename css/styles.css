@@ -225,17 +225,22 @@ section {
   background-color: #ecf4ff;
 }
 
+.card {
+  box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.08);
+}
+
 .card.card_curses {
   padding: 24px;
 }
 
-.card-titel {
+.card-title {
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
 
   color: #333333;
 }
+
 .card-price {
   font-weight: bold;
   font-size: 24px;
@@ -295,4 +300,11 @@ section {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+
+/* mentors */
+
+.mentor_icon_card {
+  width: 16px;
+  height: 16px;
 }
