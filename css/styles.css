@@ -19,18 +19,23 @@ section {
 }
 
 .hero {
-  height: 739px;
-  width: 100%;
+  height: 690px;
+  max-width: 1600px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/hero/heroBg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
+  background-color: #fff;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .text_hero {
   width: 940px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -198,6 +203,7 @@ section {
 }
 
 .text_titel_work {
+  position: relative;
   font-weight: normal;
   font-size: 16px;
   line-height: 155%;
@@ -307,4 +313,176 @@ section {
 .mentor_icon_card {
   width: 16px;
   height: 16px;
+
+  position: relative;
+}
+
+/* event */
+
+.img_date {
+  width: 62px;
+  height: 62px;
+  background-color: #086cf9;
+  color: white;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  padding: 8px 12px;
+  border-radius: 5px 0 0 0;
+  text-align: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* section split */
+
+.them_section {
+  background-color: #d3e5fe;
+  max-width: 1440px;
+  height: 247px;
+}
+
+.bolt_text {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  color: #222222;
+}
+
+.lite_text {
+  font-size: 16px;
+  line-height: 155%;
+  color: #555555;
+}
+
+/*  section rewiews */
+
+.card_reviews {
+  width: 320px;
+  height: 260px;
+
+  border-radius: 6px;
+  box-shadow: 0px 13px 45px rgba(0, 0, 0, 0.08);
+  padding: 30px 28px;
+}
+
+.card_reviews:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* section email */
+
+.them_section_email {
+  width: 939px;
+  height: 325px;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  padding: 50px 10px;
+}
+
+.titel_work.email_sec {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  color: #fcfcfc;
+}
+
+.text_titel_work.email_sec {
+  font-size: 16px;
+  line-height: 155%;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+.email_input {
+  width: 538px;
+  height: 64px;
+  border-radius: 4px;
+  padding: 8px 8px 8px 24px;
+  border: none;
+}
+
+.btn_email {
+  width: 115px;
+  height: 48px;
+  background-color: var(--accent-color);
+  color: white;
+  position: absolute;
+  right: 210px;
+  bottom: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* footer */
+
+footer {
+  width: 1440px;
+  background-color: #d3e5fe;
+
+  padding: 60px 144px;
+}
+
+.foot_soc_icon {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+}
+
+.link_icon:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer_titel {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #222222;
+}
+
+.foot_mark::before {
+  content: '>';
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+.foot_icon_phone::before {
+  content: '';
+  background-image: url(../img/footer/icon/foot_phone.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  bottom: 2px;
+}
+
+.foot_icon_mail::before {
+  content: '';
+  background-image: url(../img/footer/icon/foot_gmail.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  bottom: 2px;
+}
+
+.foot_icon_dom::before {
+  content: '';
+  background-image: url(../img/footer/icon/foot_domain.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  bottom: 2px;
 }
