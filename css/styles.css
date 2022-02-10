@@ -52,6 +52,14 @@ section {
   line-height: 73px;
 }
 
+@media screen and (max-width: 490px) {
+  .hero_titel {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+}
+}
+
 .secondary_text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -380,7 +388,7 @@ section {
 
 .them_section_email {
   max-width: 939px;
-  height: 325px;
+  min-height: 325px;
   background-color: var(--accent-color);
   border-radius: 6px;
   padding: 50px 10px;
@@ -411,6 +419,12 @@ section {
   border-radius: 4px;
   padding: 8px 8px 8px 24px;
   border: none;
+}
+
+@media screen and (max-width: 550px) {
+  .form_input_sec_mail {
+    width: 100%;
+  }
 }
 
 .btn_email {
